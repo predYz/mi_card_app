@@ -7,6 +7,24 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/predyz.jpg'),
+              ),
+              Text(
+                'predYz',
+                style: TextStyle(fontSize: 40.0, color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Pacifico'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
